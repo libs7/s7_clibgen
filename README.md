@@ -1,2 +1,2 @@
-# s7_clibgen
-Tool for generating s7 bindings for C libraries
+# s7_tools
+Tool for generating and testing s7 bindings for C libraries
