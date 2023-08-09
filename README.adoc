@@ -1,2 +1,4 @@
-# s7_tools
+= s7_tools
 Tool for generating and testing s7 bindings for C libraries
+
+WARNING: Not ready for general use.

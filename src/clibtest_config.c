@@ -5,10 +5,10 @@
 #include <sys/errno.h>
 #include <sys/types.h>
 
-#include "gopt.h"
 #include "log.h"
 
 #if EXPORT_INTERFACE
+#include "gopt.h"
 #include "libs7.h"
 #endif
 
@@ -17,7 +17,7 @@
 s7_scheme *s7;
 
 extern bool verbose;
-extern int  verbosity;
+int  verbosity;
 extern bool debug;
 
 /* #if defined(DEVBUILD) */
