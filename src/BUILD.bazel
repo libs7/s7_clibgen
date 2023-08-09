@@ -2,12 +2,13 @@ load("@makeheaders//src:RULES.bzl", "makeheaders")
 
 DEPS = [
     "@libs7//src:s7",
-    "@gopt//:gopt",
+    "@gopt//src:gopt",
     "@liblogc//src:logc",
     "@uthash//src:uthash",
 ]
 
 S7_TOOLS_VERSION = "1.0.0"
+GOPT_VERSION = "10.0.0"
 LIBS7_VERSION = "0.1.0"
 LIBLOGC_VERSION = "1.0.0"
 UTHASH_VERSION = "2.3.0"
@@ -19,6 +20,7 @@ BASE_INCLUDE_PATHS = [
     "-I$(GENDIR)/external/libs7~{}/src".format(LIBS7_VERSION),
     "-Iexternal/liblogc~{}/src".format(LIBLOGC_VERSION),
     "-Iexternal/uthash~{}/src".format(UTHASH_VERSION),
+    "-Iexternal/gopt~{}/src".format(GOPT_VERSION),
 ]
 
 COPTS = BASE_INCLUDE_PATHS + [

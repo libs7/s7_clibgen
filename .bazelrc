@@ -1,18 +1,1 @@
-common:showdev --//config/profile=dev
-# common:showdev --config=show
-# common:showdev --compilation_mode=fastbuild
-# test:showdev --test_output=all
-# test:showdev --keep_going
-
-common:showdbg --config=show
-common:showdbg --//config/profile=dev
-common:showdbg --//config/debug
-common:showdbg --//config/debug:trace
-common:showdbg --compilation_mode dbg
-
-common:q --noshow_progress
-common:q --noshow_loading_progress
-common:q --show_result=0
-common:q --ui_event_filters=-info,-debug
-
 try-import .config/user.bazelrc

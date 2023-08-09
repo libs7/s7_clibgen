@@ -1,6 +1,5 @@
 .bazel
 bazel-*
-*.sh
 *.gz
 
 # Prerequisites
